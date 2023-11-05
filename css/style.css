@@ -1,0 +1,125 @@
+/* Estilo global para el cuerpo del documento que
+   establece el tipo de fuente y las dimensiones generales */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* Se agrega un espacio en la parte superior del elemento */
+.espacioAlto {
+  margin-top: 16%;
+}
+
+/* Se crea un espacio en blanco al lado derecho del elemento */
+.espacioDerecha {
+  margin-right: -10%;
+}
+
+/* Se alinea el contenido a la derecha y se crea un margen izquierdo */
+.alinearDerecha {
+  margin-left: 45%;
+  text-align: right;
+}
+
+/* Se ajusta el margen superior del elemento (-10% para que la imagen del carousel se muestre un poco más arriba) */
+.carrusel {
+  margin-top: 0%; /* pero se omite para no ocultar los botones del formulario */
+}
+
+/* Oscurece o aclara la imagen (partiendo del 100% como brillo normal) */
+.oscurecerImg {
+  filter: brightness(50%);
+}
+
+/* Se crea un fondo degradado en el pie de página */
+.degradadoFoot {
+  background: rgb(28, 54, 67); /* Color degradado (inicio) */
+  background: linear-gradient(90deg, rgba(28, 54, 67, 1) 0%, rgba(29, 82, 113, 1) 100%); /* Fondo degradado con colores */
+}
+
+/* Se ajusta el color del texto de los vínculos en la Navbar */
+.colorDeLink {
+  color: #909595;
+}
+
+/* Cambia el color del texto de los vínculos a blanco cuando se pasa el mouse por encima */
+.colorDeLink:hover {
+  color: white;
+}
+
+/* Para corregir el error y ver todas las CARDs del mismo tamaño */
+.card {
+  height: 100%; /* Se establece la altura de la tarjeta */
+}
+
+.card-img-top {
+  object-fit: cover;
+  /* Se ajusta la imagen para que cubra el espacio de la tarjeta */
+  height: 100%;
+}
+
+/* Para agregar una pequeña separación entre la card y el texto */
+.col-md-6 {
+  border: 1px solid #fff; /* Se agrega un borde blanco muy pequeño */
+}
+
+/* Se define la clase personalizada para el color del texto */
+.text-green {
+  color: #2b9c43; /* Cambia el color del texto a verde */
+}
+
+/* Se aumenta el tamaño vertical de la imagen del 'carousel' para que no se solape con la navbar al verse en un dispositivo móvil */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 900px;
+    /* Evita que las imágenes del carousel se deformen verticalmente*/
+    object-fit: cover;
+  }
+
+  /* Para corregir el error y ver todas las CARDs del mismo tamaño */
+  .card {
+    width: 100%;
+  }
+}
+
+/* Estilo CSS para centrar verticalmente la imagen de la 'CARD Horizontal' */
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Para ocupar toda la altura de la columna */
+}
+
+/* Estilos CSS para la imagen */
+.col-md-6 img {
+  max-height: 100%; /* Limita la altura de la imagen */
+  max-width: 100%; /* Limita el ancho de la imagen */
+  display: block; /* Elimina los espacios innecesarios debajo de la imagen */
+}
+
+/* Estilo personalizado para las tarjetas del formulario 'Comprar tickets' */
+.cards-container .card {
+  border-radius: 5px !important;
+  border: 2px solid !important;
+}
+
+.cards-container .border-primary {
+  border-color: blue !important;
+}
+
+.cards-container .border-success {
+  border-color: green !important;
+}
+
+.cards-container .border-warning {
+  border-color: orange !important;
+}
+
+/* Se complementa la animación de las cards con CSS */
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+/* FIN del código ;) */
